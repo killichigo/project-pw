@@ -13,26 +13,34 @@ and open the template in the editor.
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">PF Advogados</a>
-				</div>
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="login.xhtml">Home</a></li>
-					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#">Cadastros<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="cadastrar_advogado.xhtml">Advogado</a></li>
-							<li><a href="cadastrar_analista.xhtml">Analista</a></li>
-							<li><a href="cadastrar_supervisor.xhtml">Supervisor</a></li>
-						</ul></li>
-					<li><a href="lancar_publicacao.xhtml">Publicação</a></li>
-					<li><a href="lancar_prazo.xhtml">Prazos</a></li>
-					<li><a href="relatorios.xhtml">Relatórios</a></li>
-					<li><a href="recrutamento.xhtml">Recrutamento</a></li>
-				</ul>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">PF Advogados</a>
 			</div>
-		</nav>
+			<ul class="nav navbar-nav">
+                                <li><a href="agenda_tarefas.xhtml">Home</a></li>
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#">Cadastros<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="cadastrar_advogado.xhtml">Advogado</a></li>
+						<li><a href="cadastrar_analista.xhtml">Analista</a></li>
+						<li><a href="cadastrar_supervisor.xhtml">Supervisor</a></li>
+					</ul></li>
+                                <li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#">Processos<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="validar_prazo.xhtml">Validar prazo</a></li>
+						<li><a href="cumprir_prazo.xhtml">Cumprir prazo</a></li>
+						<li><a href="revisar_cumprimento.xhtml">Revisar cumprimento prazo</a></li>
+					</ul></li>
+                                <li><a href="agenda_tarefas.xhtml">Agenda tarefas</a></li>
+				<li><a href="lancar_publicacao.xhtml">Publicação</a></li>
+				<li><a href="lancar_prazo.xhtml">Prazos</a></li>
+				<li><a href="relatorios.xhtml">Relatórios</a></li>
+				<li><a href="recrutamento.xhtml">Recrutamento</a></li>
+			</ul>
+		</div>
+	</nav>
 		
 	<form>
 		<h2>Publicação</h2>
