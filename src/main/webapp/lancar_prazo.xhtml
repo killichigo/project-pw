@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+ <?xml version="1.0" encoding="UTF-8"?>
 <!--
 To change this template, choose Tools | Templates
 and open the template in the editor.
@@ -10,8 +10,17 @@ and open the template in the editor.
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <SCRIPT language="javascript">
+     $(document).ready(function () {
+        $('#data').mask('99/99/9999');
+        return false;
+    });
+    </SCRIPT>
     </head>
     <body>
+        teste
         <nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -43,7 +52,7 @@ and open the template in the editor.
 	</nav>
 
 
-        <form>
+        <form name="form1">
             <h2>Prazo</h2>
             <div class="col-xs-3">
                 Tipo de prazo: <select name="tipoPrazo" class="form-control">
@@ -55,7 +64,7 @@ and open the template in the editor.
                     <option>Sem prazo</option>
                 </select> <br />
                 Prazo fatal:
-                <input type="text" name="prazoFatal" class="form-control" /><br/>
+                <input type="text"  name="data" id="data" class="form-control" /><br/>
                 Descrição:
                 <textarea rows="4" cols="50" name="descricao" class="form-control" /><br/>
                 <input type="button" value="Prazo único" class="btn btn-primary" />
@@ -63,5 +72,8 @@ and open the template in the editor.
                 <input type="button" value="Devolver públicação/intimação" class="btn btn-primary" />
             </div>
         </form>
+        
+        
+
     </body>
 </html>

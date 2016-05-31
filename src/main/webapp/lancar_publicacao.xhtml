@@ -10,6 +10,19 @@ and open the template in the editor.
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+ <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <SCRIPT language="javascript">
+     $(document).ready(function () {
+        $('#data').mask('99/99/9999');
+        return false;
+    });
+    
+    $(document).ready(function () {
+        $('#data1').mask('99/99/9999');
+        return false;
+    });
+    </SCRIPT>
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
@@ -45,7 +58,7 @@ and open the template in the editor.
 	<form>
 		<h2>Publicação</h2>
 		<div class="col-xs-3">
-			Data da publicação: <input type="text" name="data"
+			Data da publicação: <input type="text" name="data" id="data"
 				class="form-control" /><br /> Nome da parte: <input type="text"
 				name="nomeParte" class="form-control" /><br /> Número processo: <input
 				type="text" name="numProcesso" class="form-control" /><br />

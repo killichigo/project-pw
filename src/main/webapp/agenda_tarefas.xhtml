@@ -10,6 +10,15 @@ and open the template in the editor.
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+        <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <SCRIPT language="javascript">
+     $(document).ready(function () {
+        $('#data').mask('99/99/9999');
+        return false;
+    });
+    </SCRIPT>
     </head>
     <body>
         <nav class="navbar navbar-inverse">
@@ -72,7 +81,7 @@ and open the template in the editor.
                     <option>Todos</option>
                 </select> <br />
                 Data de criação:
-                <input type="text" name="dataCriacao" class="form-control" /><br/>
+                <input type="text" name="dataCriacao" class="form-control" id="data" /><br/>
                 <input type="button" value="Filtrar" class="btn btn-primary" /><br/><br/><br/><br/>
             </div>
 

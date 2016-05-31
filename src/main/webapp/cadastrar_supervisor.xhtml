@@ -10,6 +10,15 @@ and open the template in the editor.
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+<link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <SCRIPT language="javascript">
+     $(document).ready(function () {
+        $('#data').mask('99/99/9999');
+        return false;
+    });
+    </SCRIPT>
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
@@ -49,7 +58,7 @@ and open the template in the editor.
 			Nome: <input type="text" name="nome" class="form-control" /><br />
 			CPF: <input type="text" name="cpf" class="form-control" /><br /> RG:
 			<input type="text" name="rg" class="form-control" /><br /> Data
-			Nascimento: <input type="text" name="dataNascimento"
+			Nascimento: <input type="text" name="dataNascimento" id="data"
 				class="form-control" /><br /> E-mail: <input type="text"
 				name="email" class="form-control" /><br /> Senha: <input
 				type="password" name="senha" class="form-control" /><br /> Confirmar

@@ -10,6 +10,20 @@ and open the template in the editor.
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+<link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <SCRIPT language="javascript">
+     $(document).ready(function () {
+        $('#data').mask('99/99/9999');
+        return false;
+    });
+    
+    $(document).ready(function () {
+        $('#data1').mask('99/99/9999');
+        return false;
+    });
+    </SCRIPT>
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
@@ -49,8 +63,8 @@ and open the template in the editor.
 			Num. processo: <input type="text" name="numProcesso"
 				class="form-control" /><br /> Pasta: <input type="text"
 				name="pasta" class="form-control" /><br /> Data fatal: <input
-				type="text" name="dataFatal" class="form-control" /><br /> Data
-			criação: <input type="text" name="dataCriacao" class="form-control" /><br />
+				type="text" name="dataFatal" class="form-control" id="data" /><br /> Data
+			criação: <input type="text" name="dataCriacao" class="form-control" id="data1"/><br />
 			Área: <select name="area" id="area" class="form-control">
 				<option>Direito Público</option>
 				<option>Direito Processual Penal</option>
