@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+#wrapper {
+  margin-left: 200px;
+}
+#content {
+  float: right;
+  width: 100%;
+}
+#sidebar {
+  float: left;
+  width: 400px;
+  margin-left: -200px;
+}
+#cleared {
+  clear: both;
+}

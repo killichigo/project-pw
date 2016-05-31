@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TODO supply a title</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">PF Advogados</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="login.xhtml">Home</a></li>
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#">Cadastros<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="cadastrar_advogado.xhtml">Advogado</a></li>
+						<li><a href="cadastrar_analista.xhtml">Analista</a></li>
+						<li><a href="cadastrar_supervisor.xhtml">Supervisor</a></li>
+					</ul></li>
+				<li><a href="lancar_publicacao.xhtml">Publicação</a></li>
+				<li><a href="lancar_prazo.xhtml">Prazos</a></li>
+				<li><a href="relatorios.xhtml">Relatórios</a></li>
+				<li><a href="recrutamento.xhtml">Recrutamento</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<form>
+		<h2>Cadastro Supervisores</h2>
+		<div class="col-xs-3">
+			Nome: <input type="text" name="nome" class="form-control" /><br />
+			CPF: <input type="text" name="cpf" class="form-control" /><br /> RG:
+			<input type="text" name="rg" class="form-control" /><br /> Data
+			Nascimento: <input type="text" name="dataNascimento"
+				class="form-control" /><br /> E-mail: <input type="text"
+				name="email" class="form-control" /><br /> Senha: <input
+				type="password" name="senha" class="form-control" /><br /> Confirmar
+			senha: <input type="password" name="senhaConfirmar"
+				class="form-control" /><br /> Área: <select name="area" id="area"
+				class="form-control">
+				<option>Direito Público</option>
+				<option>Direito Processual Penal</option>
+				<option>Direito Tributário</option>
+				<option>Direito Internacional</option>
+			</select> <br /> <input type="button" value="Salvar" class="btn btn-primary" />
+			<input type="button" value="Buscar" class="btn btn-primary" />
+		</div>
+	</form>
+</body>
+</html>
